@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+h1,
+h2,
+h3 {
+  font-family: #f8c076; }
+
+h1 {
+  font-size: 3em; }
+
+h2 {
+  font-size: 1em;
+  font-weight: bold; }
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: bold; }
+
+small {
+  font-size: 0.8em;
+  color: #f6f6f6;
+  text-decoration: none; }
+
+/*CLASES*/
+.parrafoLg {
+  font-size: 2em; }
+
+/* TITULOS */
+.tituloMain {
+  display: flex;
+  justify-content: center;
+  color: #FAEBD7;
+  font-size: 3em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+
+.tituloH2 {
+  align-items: center; }
+
+/*CONTACTO*/
+.tituloContacto {
+  font-size: 300%;
+  color: antiquewhite;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+
+.tituloContacto2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 300%;
+  color: antiquewhite;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+
+/*SCROLL*/
+.scroll {
+  float: right;
+  background-color: #89ccdab3;
+  height: 800px;
+  width: 60%;
+  overflow-y: scroll; }
+
+/*BORDE CURVO*/
+.bordeRadio {
+  border-radius: 4px; }
+
+html {
+  height: 100%; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: #52858fb3;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-decoration: none;
+  width: 80%;
+  margin: 0% auto;
+  border: 1px #f8c076; }
+
+@media (min-width: 950px) {
+  .col950 main {
+    display: flex; } }
+
+@media (max-width: 700px) {
+  body {
+    width: 100%; }
+  .imagenlogo {
+    width: 200px; } }
+
+.headertitulo {
+  border-radius: 4px;
+  text-align: center;
+  background: #f5f0f0;
+  background: linear-gradient(90deg, #f5f0f0 0%, #52858fb3); }
+
+/*Botonera con subrayado animado*/
+.botonera ul li a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: currentColor;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s; }
+  .botonera ul li a:hover {
+    color: #0f0e0e;
+    font-weight: 600;
+    background-size: 100% 2px; }
+
+/* ID botonera */
+#botonera img {
+  width: 300px; }
+
+.boton {
+  width: 50%;
+  margin-left: 25%;
+  height: 2rem;
+  border: 3px solid #52858fb3;
+  border-radius: 5px;
+  margin-top: 1rem; }
+
+/* imagenes productos:hover index */
+.contenedorHover {
+  width: 100%;
+  display: flex; }
+  .contenedorHover figure {
+    position: relative;
+    cursor: pointer;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5); }
+    .contenedorHover figure .capa {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: #f8c076;
+      transition: all 400ms ease-out;
+      opacity: 0;
+      visibility: hidden;
+      text-align: center; }
+  .contenedorHover img {
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+    will-change: transform; }
+
+.contenedorHover figure:hover > .capa {
+  opacity: 1;
+  visibility: visible; }
+  .contenedorHover figure:hover > .capa h5 {
+    margin-top: 70px;
+    margin-bottom: 15px; }
+
+.contenedorHover figure:hover > img {
+  transform: scale(1.3); }
+
+.contenedor figure .capa p {
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 220px;
+  margin: auto; }
+
+.contenedor figure .capa h5 {
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 120px;
+  transition: all 400ms ease-out;
+  margin-top: 30px; }
+
+.cardFooter {
+  text-decoration: none; }
+
+footer {
+  margin-top: auto; }
+
+/* 404 page */
+.contenedorError404 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.contenedorError404 figure {
+  position: relative;
+  cursor: pointer;
+  width: 700px;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5); }
+
+.tituloError404 {
+  display: flex;
+  justify-content: center;
+  color: red; }
+
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 0;
+  margin: 0; }
