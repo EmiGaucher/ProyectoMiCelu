@@ -125,7 +125,6 @@ body {
 
 /* imagenes productos:hover index */
 .contenedorHover {
-  margin: 50px;
   display: flex; }
   .contenedorHover figure {
     position: relative;
